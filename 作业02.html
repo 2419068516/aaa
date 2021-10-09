@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var persons = [{
+                username: '张飞',
+                sex: '男',
+                salary: 50000
+            },
+            {
+                username: '关羽',
+                sex: '男',
+                salary: 60000
+            },
+            {
+                username: '刘备',
+                sex: '男',
+                salary: 70000
+            }
+        ]      
+        var a =JSON.parse(JSON.stringify(persons))
+        a.forEach(function (val, index) {
+            val.salary += 2000;
+        })
+        console.log(a);
+        
+    </script>
+</body>
+
+</html>

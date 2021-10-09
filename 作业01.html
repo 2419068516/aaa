@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var cartGoods = [{
+                goodsname: '小米10',
+                price: 5000,
+                isChecked: true, //代表是否选中了
+            },
+            {
+                goodsname: '苹果10',
+                price: 3000,
+                isChecked: true, //代表是否选中了
+            },
+            {
+                goodsname: '苹果10',
+                price: 3000,
+                isChecked: true, //代表是否选中了
+            },
+            {
+                goodsname: '苹果10',
+                price: 3000,
+                isChecked: true, //代表是否选中了
+            }
+        ]
+        var a = cartGoods.every(function (val, index) {
+            return val.isChecked == true;
+        })
+        a ? console.log("全选") : console.log("不全选");
+    </script>
+</body>
+
+</html>
